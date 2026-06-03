@@ -35,6 +35,129 @@ body {
     background: var(--cor-branca-marca);
 }
 
+/* Início: Slideshow */
+.hero-slider {
+    flex-shrink: 0;
+    width: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slides {
+    width: 300%;
+    height: 450px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.manual-btn {
+    border: 2px solid var(--cor-branca);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:hover {
+    background-color: var(--cor-branca);
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.navigation-auto div {
+    border: 2px solid var(--cor-azul-secundario);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: var(--cor-branca);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: var(--cor-branca);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: var(--cor-branca);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -33.33%;
+}
+
+#radio3:checked~.first {
+    margin-left: -66.66%;
+}
+
+
+@media (max-width: 900px) {
+    .hero-slider {
+        width: 100%;
+    }
+
+    .slider {
+        height: 260px;
+    }
+
+    .slides {
+        height: 260px;
+    }
+
+    .slide img {
+        height: 260px;
+    }
+}
+
+/* Fim: Slideshow */
+
+
 /* Início: Menu */
 header {
     display: flex;
@@ -179,7 +302,7 @@ header a {
 .hero-conteudo {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 50px;
     max-width: 1100px;
     margin: 0 auto;
     width: 100%;
