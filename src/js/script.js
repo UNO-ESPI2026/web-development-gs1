@@ -34,7 +34,7 @@ function nextImage() {
 
 const form = document.getElementById('contato-form');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (validarFormulario()) {
         alert('Mensagem enviada com sucesso!');
@@ -43,9 +43,9 @@ form.addEventListener('submit', function(e) {
 });
 
 function validarFormulario() {
-    const nome     = document.getElementById('nome').value.trim();
-    const email    = document.getElementById('email').value.trim();
-    const assunto  = document.getElementById('assunto').value.trim();
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const assunto = document.getElementById('assunto').value.trim();
     const mensagem = document.getElementById('mensagem').value.trim();
     const validacaoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

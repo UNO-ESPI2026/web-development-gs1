@@ -1,0 +1,11 @@
+Integrantes:
+
+- Bruce Li Yan Ting: RM 569168
+- Felipe Rorato Costa: RM 570419
+- Giovanna Andrade Parejas: RM 569041
+- Laura Cardin Mirilli: RM 570841
+- Matheus Pereira de Oliveira: RM 570470
+
+Repositório GitHub: https://github.com/UNO-ESPI2026/web-development-gs1
+
+GitHub Pages: https://uno-espi2026.github.io/web-development-gs1/
