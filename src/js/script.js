@@ -248,19 +248,18 @@ iniciarQuiz();
 function trocarTema(tema) {
     document.body.classList.remove('tema-escuro', 'tema-verde');
 
-    document.getElementById('tema-claro').classList.remove('active');
-    document.getElementById('tema-escuro').classList.remove('active');
-    document.getElementById('tema-verde').classList.remove('active');
+    document.querySelectorAll('.tema-claro').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tema-escuro').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tema-verde').forEach(btn => btn.classList.remove('active'));
 
     if (tema === 'escuro') {
         document.body.classList.add('tema-escuro');
-        document.getElementById('tema-escuro').classList.add('active');
+        document.querySelectorAll('.tema-escuro').forEach(btn => btn.classList.add('active'));
     } else if (tema === 'verde') {
         document.body.classList.add('tema-verde');
-        document.getElementById('tema-verde').classList.add('active');
+        document.querySelectorAll('.tema-verde').forEach(btn => btn.classList.add('active'));
     } else {
-        document.getElementById('tema-claro').classList.add('active');
+        document.querySelectorAll('.tema-claro').forEach(btn => btn.classList.add('active'));
     }
 }
-
 // Fim: Tema claro

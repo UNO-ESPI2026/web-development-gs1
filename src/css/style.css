@@ -540,6 +540,31 @@ header a {
     transform: translateY(-7px) rotate(-45deg);
 }
 
+.tema-btns-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .tema-btns {
+        display: none;
+    }
+
+    .tema-btns-mobile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(168, 205, 239, 0.1);
+    }
+
+    .tema-label {
+        font-family: var(--fonte-corpo);
+        font-size: 0.9rem;
+        color: var(--cor-branca-marca);
+    }
+}
+
 @media (max-width: 768px) {
     #hamburguer {
         display: flex;
@@ -577,6 +602,7 @@ header a {
 }
 
 /* Fim: Menu */
+
 
 /* Início: Hero */
 

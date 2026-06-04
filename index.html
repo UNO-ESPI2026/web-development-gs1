@@ -29,8 +29,17 @@
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#pratica">Aplicação</a></li>
             </ul>
+
+            <!-- botões de tema visíveis só no mobile -->
+            <div class="tema-btns-mobile">
+                <span class="tema-label">Tema:</span>
+                <button class="tema-btn tema-claro active" title="Tema claro" onclick="trocarTema('claro')"></button>
+                <button class="tema-btn tema-escuro" title="Tema escuro" onclick="trocarTema('escuro')"></button>
+                <button class="tema-btn tema-verde" title="Tema verde" onclick="trocarTema('verde')"></button>
+            </div>
         </nav>
 
+        <!-- botões de tema visíveis só no desktop -->
         <div class="tema-btns">
             <button class="tema-btn tema-claro active" id="tema-claro" title="Tema claro"
                 onclick="trocarTema('claro')"></button>
