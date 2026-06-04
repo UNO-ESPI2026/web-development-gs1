@@ -342,11 +342,10 @@ body.tema-verde .objetivos-badge,
 body.tema-verde .publico-badge,
 body.tema-verde .pratica-badge,
 body.tema-verde .contato-badge {
-    background: var(--fundo-badge-azul-claro);
-    border-color: var(--borda-badge-azul-claro);
-    color: var(--cor-azul-terciario);
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+    color: var(--cor-verde-secundario);
 }
-
 body.tema-verde .problema-titulo,
 body.tema-verde .objetivos-titulo,
 body.tema-verde .publico-titulo,
@@ -360,7 +359,7 @@ body.tema-verde .objetivos-titulo span,
 body.tema-verde .publico-titulo span,
 body.tema-verde .pratica-titulo span,
 body.tema-verde .contato-titulo span {
-    color: var(--cor-azul-terciario);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .problema-subtitulo,
@@ -368,7 +367,7 @@ body.tema-verde .objetivos-subtitulo,
 body.tema-verde .publico-subtitulo,
 body.tema-verde .pratica-subtitulo,
 body.tema-verde .contato-subtitulo {
-    color: var(--cor-azul-terciario);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .problema-card,
@@ -380,7 +379,7 @@ body.tema-verde .pratica-card {
 
 body.tema-verde .problema-card:hover,
 body.tema-verde .publico-card:hover {
-    border-color: var(--cor-azul-terciario);
+    border-color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .problema-card h3,
@@ -392,56 +391,161 @@ body.tema-verde .pratica-card-texto h3 {
 body.tema-verde .problema-card p,
 body.tema-verde .publico-card p,
 body.tema-verde .pratica-card-texto p {
-    color: var(--cor-azul-terciario);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .problema-card-icone,
 body.tema-verde .publico-card-icone {
-    background: rgba(168, 205, 239, 0.1);
-    border-radius: 10px;
+    background: rgba(109, 219, 184, 0.1);
 }
+
 
 body.tema-verde .problema-card-icone img,
 body.tema-verde .publico-card-icone img {
-    filter: invert(80%) sepia(20%) saturate(400%) hue-rotate(185deg) brightness(105%) contrast(90%);
+    filter: invert(79%) sepia(30%) saturate(600%) hue-rotate(118deg) brightness(100%) contrast(85%);
 }
 
 body.tema-verde .num-verde,
 body.tema-verde .num-azul {
-    background: rgba(168, 205, 239, 0.15);
-    color: var(--cor-azul-terciario);
+    background: rgba(109, 219, 184, 0.15);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .objetivos-item {
-    color: var(--cor-azul-terciario);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .pratica-num.num-verde,
 body.tema-verde .pratica-num.num-azul {
-    background: rgba(168, 205, 239, 0.15);
-    color: var(--cor-azul-terciario);
+    background: rgba(109, 219, 184, 0.15);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .divisor hr {
-    border-color: rgba(168, 205, 239, 0.15);
+    border-color: rgba(109, 219, 184, 0.2);
 }
 
 body.tema-verde .form-label {
-    color: var(--cor-azul-terciario);
+    color: var(--cor-verde-secundario);
 }
 
 body.tema-verde .form-input {
-    background: rgba(168, 205, 239, 0.05);
-    border-color: rgba(168, 205, 239, 0.15);
+    background: rgba(109, 219, 184, 0.05);
+    border-color: rgba(109, 219, 184, 0.15);
     color: var(--cor-branca-marca);
 }
 
+
 body.tema-verde .form-input::placeholder {
-    color: rgba(168, 205, 239, 0.3);
+    color: rgba(109, 219, 184, 0.3);
 }
 
 body.tema-verde .form-input:focus {
-    border-color: var(--cor-azul-terciario);
+    border-color: var(--cor-verde-secundario);
+}
+
+/* Tecnologia — textos verde claro */
+body.tema-verde .tecnologia-badge {
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .tecnologia-subtitulo {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .tecnologia-card {
+    background: rgba(109, 219, 184, 0.05);
+    border-color: rgba(109, 219, 184, 0.12);
+}
+
+body.tema-verde .tecnologia-card:hover {
+    background: rgba(109, 219, 184, 0.09);
+    border-color: rgba(109, 219, 184, 0.25);
+}
+
+body.tema-verde .tecnologia-card p {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .tecnologia-card-icone {
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+}
+
+body.tema-verde .beneficios-badge {
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .beneficios-subtitulo {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .beneficios-card {
+    background: rgba(109, 219, 184, 0.05);
+    border-color: rgba(109, 219, 184, 0.12);
+}
+
+body.tema-verde .beneficios-card:hover {
+    background: rgba(109, 219, 184, 0.09);
+    border-color: rgba(109, 219, 184, 0.25);
+}
+
+body.tema-verde .beneficios-card p {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .beneficios-card-icone {
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .quiz-badge {
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .quiz-subtitulo {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .quiz-card {
+    background: rgba(109, 219, 184, 0.05);
+    border-color: rgba(109, 219, 184, 0.12);
+}
+
+body.tema-verde .quiz-progresso-texto {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .quiz-progresso-barra {
+    background: rgba(109, 219, 184, 0.15);
+}
+
+body.tema-verde .quiz-opcao {
+    background: rgba(109, 219, 184, 0.05);
+    border-color: rgba(109, 219, 184, 0.15);
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .quiz-opcao:hover {
+    background: rgba(109, 219, 184, 0.1);
+    border-color: rgba(109, 219, 184, 0.3);
+    color: var(--cor-branca-marca);
+}
+
+body.tema-verde .quiz-resultado {
+    background: rgba(109, 219, 184, 0.05);
+    border-color: rgba(109, 219, 184, 0.12);
+}
+
+body.tema-verde .resultado-texto {
+    color: var(--cor-verde-secundario);
 }
 
 /* Fim: Tema verde */
