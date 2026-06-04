@@ -444,7 +444,6 @@ body.tema-verde .form-input:focus {
     border-color: var(--cor-verde-secundario);
 }
 
-/* Tecnologia — textos verde claro */
 body.tema-verde .tecnologia-badge {
     background: rgba(109, 219, 184, 0.1);
     border-color: rgba(109, 219, 184, 0.3);
@@ -546,6 +545,32 @@ body.tema-verde .quiz-resultado {
 
 body.tema-verde .resultado-texto {
     color: var(--cor-verde-secundario);
+}
+
+body.tema-verde #footer {
+    background: #0D2B1F;
+    border-top-color: rgba(109, 219, 184, 0.15);
+}
+
+body.tema-verde .footer-descricao {
+    color: rgba(109, 219, 184, 0.6);
+}
+
+body.tema-verde .footer-membros-titulo {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .footer-lista li {
+    color: rgba(109, 219, 184, 0.5);
+}
+
+body.tema-verde .footer-lista li span {
+    color: var(--cor-verde-secundario);
+}
+
+body.tema-verde .footer-bottom {
+    border-top-color: rgba(109, 219, 184, 0.08);
+    color: rgba(109, 219, 184, 0.3);
 }
 
 /* Fim: Tema verde */
