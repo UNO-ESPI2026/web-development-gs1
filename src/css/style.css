@@ -157,6 +157,49 @@ body {
 
 /* Fim: Slideshow */
 
+/* Início: Tema */
+
+.tema-btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tema-btn {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+    flex-shrink: 0;
+}
+
+.tema-btn.active {
+    border-color: var(--cor-branca-marca);
+    transform: scale(1.2);
+}
+
+.tema-claro {
+    background: var(--cor-branca-marca);
+}
+
+.tema-escuro {
+    background: #1A3A6B;
+}
+
+.tema-verde {
+    background: var(--cor-verde-primario);
+}
+
+@media (max-width: 768px) {
+    .tema-btns {
+        display: none;
+    }
+}
+
+/* Fim: Tema */
+
 
 /* Início: Menu */
 header {
