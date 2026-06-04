@@ -379,9 +379,44 @@
         <!-- Fim: Aplicação -->
 
 
-        <div class="divisor">
-            <hr>
-        </div>
+        <!-- Início: Quiz -->
+        <section id="quiz">
+            <div class="quiz-conteudo">
+
+                <div class="quiz-topo">
+                    <span class="quiz-badge">QUIZ</span>
+                    <h2 class="quiz-titulo">Teste seu conhecimento sobre o <span>Zenit</span></h2>
+                    <p class="quiz-subtitulo">10 perguntas sobre agricultura de precisão e exploração espacial.</p>
+                </div>
+
+                <div class="quiz-card" id="quiz-card">
+
+                    <div class="quiz-progresso">
+                        <span class="quiz-progresso-texto" id="quiz-progresso-texto">Pergunta 1 de 10</span>
+                    </div>
+
+                    <p class="quiz-pergunta" id="quiz-pergunta">Pergunta</p>
+
+                    <div class="quiz-opcoes" id="quiz-opcoes">
+                        <button class="quiz-opcao">Opção A</button>
+                        <button class="quiz-opcao">Opção B</button>
+                        <button class="quiz-opcao">Opção C</button>
+                        <button class="quiz-opcao">Opção D</button>
+                    </div>
+
+                    <button class="quiz-proximo" id="quiz-proximo" disabled>Próxima</button>
+
+                </div>
+
+                <div class="quiz-resultado" id="quiz-resultado">
+                    <div class="resultado-icone">🌱</div>
+                    <h3 class="resultado-titulo" id="resultado-titulo">Você acertou 0 de 10!</h3>
+                    <button class="btn-primario" id="quiz-reiniciar">Tentar novamente</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fim: Quiz -->
 
         <!-- Início: Contato -->
         <section id="contato">
