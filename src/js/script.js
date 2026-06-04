@@ -178,11 +178,11 @@ function renderizarPergunta() {
     const opcoes = document.getElementById('quiz-opcoes');
     opcoes.innerHTML = '';
 
-    dados.opcoes.forEach(function(opcao, index) {
+    dados.opcoes.forEach(function (opcao, index) {
         const btn = document.createElement('button');
         btn.classList.add('quiz-opcao');
         btn.textContent = opcao;
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             selecionarOpcao(index, btn);
         });
         opcoes.appendChild(btn);
@@ -200,7 +200,7 @@ function selecionarOpcao(index, btnClicado) {
     const dados = perguntas[perguntaAtual];
     const botoes = document.querySelectorAll('.quiz-opcao');
 
-    botoes.forEach(function(btn, i) {
+    botoes.forEach(function (btn, i) {
         btn.disabled = true;
         if (i === dados.correta) {
             btn.classList.add('correta');
@@ -217,7 +217,7 @@ function selecionarOpcao(index, btnClicado) {
     document.getElementById('quiz-proximo').disabled = false;
 }
 
-document.getElementById('quiz-proximo').addEventListener('click', function() {
+document.getElementById('quiz-proximo').addEventListener('click', function () {
     perguntaAtual++;
     if (perguntaAtual < perguntas.length) {
         renderizarPergunta();
@@ -235,10 +235,32 @@ function mostrarResultado() {
         'Você acertou ' + pontuacao + ' de ' + perguntas.length + '!';
 }
 
-document.getElementById('quiz-reiniciar').addEventListener('click', function() {
+document.getElementById('quiz-reiniciar').addEventListener('click', function () {
     iniciarQuiz();
 });
 
 iniciarQuiz();
 
 // Fim: Quiz
+
+// Início: Tema claro
+
+function trocarTema(tema) {
+    document.body.classList.remove('tema-escuro', 'tema-verde');
+
+    document.getElementById('tema-claro').classList.remove('active');
+    document.getElementById('tema-escuro').classList.remove('active');
+    document.getElementById('tema-verde').classList.remove('active');
+
+    if (tema === 'escuro') {
+        document.body.classList.add('tema-escuro');
+        document.getElementById('tema-escuro').classList.add('active');
+    } else if (tema === 'verde') {
+        document.body.classList.add('tema-verde');
+        document.getElementById('tema-verde').classList.add('active');
+    } else {
+        document.getElementById('tema-claro').classList.add('active');
+    }
+}
+
+// Fim: Tema claro
