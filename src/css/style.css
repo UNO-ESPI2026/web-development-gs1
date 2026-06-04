@@ -1448,13 +1448,6 @@ header a {
     min-height: 140px;
 }
 
-.form-erro {
-    font-family: var(--fonte-corpo);
-    font-size: 0.75rem;
-    color: #E24B4A;
-    min-height: 18px;
-}
-
 .form-rodape {
     display: flex;
     align-items: center;
@@ -1471,10 +1464,6 @@ header a {
 
 .form-sucesso.visivel {
     display: block;
-}
-
-.form-input.input-erro {
-    border-color: #E24B4A;
 }
 
 @media (max-width: 1024px) and (min-width: 901px) {
