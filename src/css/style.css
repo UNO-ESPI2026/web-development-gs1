@@ -202,13 +202,6 @@ body {
 
 /* Início: Tema escuro */
 
-body.tema-escuro #hero,
-body.tema-escuro #tecnologia,
-body.tema-escuro #beneficios,
-body.tema-escuro #quiz {
-    background: #0B1A2E;
-}
-
 body.tema-escuro {
     background: #0B1A2E;
 }
@@ -217,7 +210,11 @@ body.tema-escuro #problema,
 body.tema-escuro #objetivos,
 body.tema-escuro #publico,
 body.tema-escuro #pratica,
-body.tema-escuro #contato {
+body.tema-escuro #contato,
+body.tema-escuro #hero,
+body.tema-escuro #tecnologia,
+body.tema-escuro #beneficios,
+body.tema-escuro #quiz {
     background: #0B1A2E;
 }
 
@@ -322,6 +319,132 @@ body.tema-escuro .form-input:focus {
 }
 
 /* Fim: Tema escuro */
+
+/* Início: Tema verde */
+
+body.tema-verde {
+    background: #041613;
+}
+
+body.tema-verde #problema,
+body.tema-verde #objetivos,
+body.tema-verde #publico,
+body.tema-verde #pratica,
+body.tema-verde #contato,
+body.tema-verde #tecnologia,
+body.tema-verde #beneficios,
+body.tema-verde #quiz {
+    background: #041613;
+}
+
+body.tema-verde .problema-badge,
+body.tema-verde .objetivos-badge,
+body.tema-verde .publico-badge,
+body.tema-verde .pratica-badge,
+body.tema-verde .contato-badge {
+    background: var(--fundo-badge-azul-claro);
+    border-color: var(--borda-badge-azul-claro);
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .problema-titulo,
+body.tema-verde .objetivos-titulo,
+body.tema-verde .publico-titulo,
+body.tema-verde .pratica-titulo,
+body.tema-verde .contato-titulo {
+    color: var(--cor-branca-marca);
+}
+
+body.tema-verde .problema-titulo span,
+body.tema-verde .objetivos-titulo span,
+body.tema-verde .publico-titulo span,
+body.tema-verde .pratica-titulo span,
+body.tema-verde .contato-titulo span {
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .problema-subtitulo,
+body.tema-verde .objetivos-subtitulo,
+body.tema-verde .publico-subtitulo,
+body.tema-verde .pratica-subtitulo,
+body.tema-verde .contato-subtitulo {
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .problema-card,
+body.tema-verde .publico-card,
+body.tema-verde .pratica-card {
+    background: rgba(168, 205, 239, 0.05);
+    border-color: rgba(168, 205, 239, 0.12);
+}
+
+body.tema-verde .problema-card:hover,
+body.tema-verde .publico-card:hover {
+    border-color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .problema-card h3,
+body.tema-verde .publico-card h3,
+body.tema-verde .pratica-card-texto h3 {
+    color: var(--cor-branca-marca);
+}
+
+body.tema-verde .problema-card p,
+body.tema-verde .publico-card p,
+body.tema-verde .pratica-card-texto p {
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .problema-card-icone,
+body.tema-verde .publico-card-icone {
+    background: rgba(168, 205, 239, 0.1);
+    border-radius: 10px;
+}
+
+body.tema-verde .problema-card-icone img,
+body.tema-verde .publico-card-icone img {
+    filter: invert(80%) sepia(20%) saturate(400%) hue-rotate(185deg) brightness(105%) contrast(90%);
+}
+
+body.tema-verde .num-verde,
+body.tema-verde .num-azul {
+    background: rgba(168, 205, 239, 0.15);
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .objetivos-item {
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .pratica-num.num-verde,
+body.tema-verde .pratica-num.num-azul {
+    background: rgba(168, 205, 239, 0.15);
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .divisor hr {
+    border-color: rgba(168, 205, 239, 0.15);
+}
+
+body.tema-verde .form-label {
+    color: var(--cor-azul-terciario);
+}
+
+body.tema-verde .form-input {
+    background: rgba(168, 205, 239, 0.05);
+    border-color: rgba(168, 205, 239, 0.15);
+    color: var(--cor-branca-marca);
+}
+
+body.tema-verde .form-input::placeholder {
+    color: rgba(168, 205, 239, 0.3);
+}
+
+body.tema-verde .form-input:focus {
+    border-color: var(--cor-azul-terciario);
+}
+
+/* Fim: Tema verde */
 
 /* Início: Menu */
 header {
